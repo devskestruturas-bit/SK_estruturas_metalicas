@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Link from "next/link";
 
 type Props = {
   menu: { label: string; path: string }[];
@@ -30,7 +31,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
       >
         {/* Shape azul */}
         <motion.div
-          className="absolute top-0 left-0 w-full h-full bg-[#0A3274]"
+          className="absolute top-0 left-0 w-full h-full bg-[#0A3274] rounded-b-2xl"
           initial={{ y: '-100%' }}
           animate={{ y: 0 }}
           exit={{ y: '-100%' }}
@@ -46,15 +47,21 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
           transition={{ duration: 0.35, delay: 0.15, ease: 'easeOut' }}
         >
           {/* Menu */}
-          <div className="flex flex-col items-center space-y-8 font-semibold text-2xl">
+          <div className="flex flex-col items-center space-y-6 font-semibold text-xl">
             {menu.map((item, i) => (
               <div
                 key={i}
                 className="cursor-pointer hover:text-blue-300 transition"
                 onClick={() => {
-                  setMenuOpen(false);
-                  router.push(item.path);
-                }}
+                      if (item.label === 'Trabalhe Conosco') {
+                        const footer = document.querySelector('footer');
+                        footer?.scrollIntoView({ behavior: 'smooth' });
+                        setMenuOpen(false);
+                      } else {
+                        setMenuOpen(false);
+                        router.push(item.path);
+                      }
+                    }} 
               >
                 {item.label}
               </div>
@@ -62,7 +69,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
           </div>
 
           {/* Contatos */}
-          <div className="flex flex-col items-center gap-4 mt-10 text-center">
+          <div className="flex flex-col items-center gap-4  text-center">
             <a
               href="mailto:comercial@skestruturas.com.br"
               className="bg-white text-[#0A3274] px-6 py-2 rounded-full font-semibold text-lg shadow-md hover:bg-[#39B2F7] hover:text-white transition"
@@ -86,9 +93,23 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
           </div>
 
           {/* Redes */}
-          <div className="flex items-center gap-8 text-4xl mt-10">
-            <FaInstagram className="cursor-pointer hover:text-blue-300 transition" />
-            <FaLinkedin className="cursor-pointer hover:text-blue-300 transition" />
+          <div className="flex items-center gap-8 text-4xl ">
+            <Link
+              href="https://www.instagram.com/skestruturas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              aria-label="Instagram"
+              className="hover:text-blue-700 transition"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              href="https://www.linkedin.com"
+              target="_blank"
+              aria-label="LinkedIn"
+              className="transition border border-blue-200 hover:bg-blue-900 hover:text-white p-2 rounded-lg"
+            >
+              <FaLinkedin />
+            </Link>
           </div>
         </motion.div>
       </motion.div>

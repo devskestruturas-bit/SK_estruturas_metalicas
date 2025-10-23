@@ -37,7 +37,7 @@ export default function Valores() {
 
   return (
     <section
-      className="relative w-full pt-[25%] sm:pt-[8%] bg-cover bg-center"
+      className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] bg-cover bg-center"
       style={{ backgroundImage: "url('/bg_valores.jpg')" }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-start text-left">
@@ -85,7 +85,7 @@ export default function Valores() {
                 />
               </motion.div>
               <motion.p
-                className="text-center text-2xl font-semibold text-gray-800"
+                className="text-center text-2xl md:text-xl xl:text-2xl font-semibold text-gray-800"
                 variants={textVariants}
               >
                 {card.text}

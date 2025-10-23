@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
+import Link from "next/link";
 
 // carregar MotionMenu apenas no cliente e de forma dinâmica
 const MotionMenu = dynamic(() => import('./MotionMenu'), { ssr: false });
@@ -75,9 +76,9 @@ export default function Header() {
           </div>
 
           {/* NAV DESKTOP */}
-          <div className="hidden md:flex w-3/5 md:w-3/4 lg:w-3/4 xl:w-3/5 flex-col">
+          <div className="hidden md:flex w-3/5 md:w-3/4 lg:w-3/4 xl:w-3/5 flex-col py-0 md:py-4 lg:pt-0">
             {/* Top bar */}
-            <div className="relative flex justify-between items-center bg-[#0A3274] [clip-path:polygon(0%_0%,100%_0%,100%_100%,5%_100%)] text-white text-sm xl:text-[13px] lg:text-[12px] px-6 py-2 xl:py-1.5">
+            <div className="hidden lg:flex  relative justify-between items-center bg-[#0A3274] [clip-path:polygon(0%_0%,100%_0%,100%_100%,5%_100%)] text-white text-sm xl:text-[13px] lg:text-[12px] px-6 py-2 xl:py-1.5">
               <div className="flex pl-12 xl:pl-8 lg:pl-4 items-center gap-4 lg:gap-3">
                 <a
                   href="mailto:comercial@skestruturas.com.br"
@@ -95,9 +96,22 @@ export default function Header() {
                 </a>
               </div>
               <div className="flex items-center gap-3 text-lg pr-[12%] md:pr-[4%] xl:pr-[12%]">
-                {/* ícones carregados dinamicamente */}
-                <FaInstagram className="cursor-pointer hover:text-blue-300 transition" />
-                <FaLinkedin className="cursor-pointer hover:text-blue-300 transition" />
+                <Link
+              href="https://www.instagram.com/skestruturas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              aria-label="Instagram"
+              className="hover:text-blue-700 transition"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              href="https://www.linkedin.com"
+              target="_blank"
+              aria-label="LinkedIn"
+              className="transition border border-blue-900 hover:bg-blue-900 hover:text-white p-2 rounded-lg"
+            >
+              <FaLinkedin />
+            </Link>
               </div>
             </div>
 

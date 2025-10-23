@@ -14,7 +14,7 @@ export default function ContactVisual({
   mobImage = "/fale_conosco_mob.png",
 }: ContactVisualProps) {
   return (
-    <div className="relative w-full h-[600px] sm:h-[700px] xl:h-[500px] flex justify-center items-center">
+    <div className="relative w-full h-[600px]  sm:h-[400px] md:h-[550px]  lg:h-[500px] xl:h-[500px] flex justify-center items-center">
       {/* Box branco de fundo */}
       <div className="absolute inset-0  w-full h-full  mx-auto"></div>
 

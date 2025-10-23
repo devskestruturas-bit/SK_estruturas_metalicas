@@ -71,7 +71,7 @@ export default function Footer() {
               Confira as vagas disponíveis no nosso LinkedIn e envie seu currículo:
             </p>
 
-            <div className="border text-[70%] md:text-lg  border-white/40 rounded-lg px-4 py-3 inline-block transition hover:bg-white/10">
+            <div className="border text-[70%] md:text-[10px]  xl:text-lg border-white/40 rounded-lg px-4 py-3 inline-block transition hover:bg-white/10">
               <Link
                 href="https://atracaodetalentos.totvs.app/skestruturasmetalicas"
                 className="hover:underline "

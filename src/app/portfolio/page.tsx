@@ -6,9 +6,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Image from 'next/image';
 import ContactVisual from '@/components/ContactVisual';
 
-export default function portfolio() {
+export default function Portfolio() {
   const imagens = [
     { src: '/img_portfolio_01.png', text: 'Pavilhões industriais' },
     { src: '/img_portfolio_02.png', text: 'Projetos personalizados' },
@@ -29,10 +30,7 @@ export default function portfolio() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section
-      className="relative w-full pt-[25%] sm:pt-[8%] bg-cover bg-center"
-    //   style={{ backgroundImage: "url('/bg_portfolio.jpg')" }}
-    >
+    <section className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] bg-cover bg-center">
       <div className="sm:max-w-7xl max-w-full mx-auto px-0 md:px-12 flex flex-col items-start text-left">
 
         {/* Título + risquinho */}
@@ -43,14 +41,14 @@ export default function portfolio() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl  sm:text-6xl md:text-7xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-extrabold txt-dark-blue leading-tight mr-4">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-extrabold txt-dark-blue leading-tight mr-4">
             SOLUÇÕES SOB MEDIDA
           </h2>
 
           <motion.div
             className="h-[4px] bg-[#0A3274] rounded-full desk"
             initial={{ width: 0 }}
-            whileInView={{ width: '40%' }}
+            whileInView={{ width: '30%' }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             viewport={{ once: true }}
           />
@@ -76,10 +74,13 @@ export default function portfolio() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <img
+              <Image
                 src={item.src}
                 alt={item.text}
+                width={600}
+                height={800}
                 className="sm:w-full w-2/3 h-auto object-cover"
+                priority={index === 0}
               />
               <p className="mt-6 text-2xl font-semibold txt-dark-blue text-center">
                 {item.text}
@@ -99,11 +100,16 @@ export default function portfolio() {
               aria-label="Previous slide"
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#0A3274] rounded-lg flex items-center justify-center text-white focus:outline-none cursor-pointer"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="cursor-pointer"
               >
-                <path d="M15 18L9 12L15 6"
+                <path
+                  d="M15 18L9 12L15 6"
                   stroke="white"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -120,11 +126,16 @@ export default function portfolio() {
               aria-label="Next slide"
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#0A3274] rounded-lg flex items-center justify-center text-white focus:outline-none cursor-pointer"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="cursor-pointer"
               >
-                <path d="M9 6L15 12L9 18"
+                <path
+                  d="M9 6L15 12L9 18"
                   stroke="white"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -176,32 +187,25 @@ export default function portfolio() {
             }}
           >
             {slides.map((src, index) => (
-  <SwiperSlide key={index}>
-    <div
-      className="relative flex items-center justify-center cursor-pointer"
-      onClick={() => setSelectedImage(src)}
-    >
-      {/* Fundo azul atrás da imagem */}
-      <div className="absolute w-[92%] h-[92%] bg-[#39B2F7] z-0 "></div>
+              <SwiperSlide key={index}>
+                <div
+                  className="relative flex items-center justify-center cursor-pointer"
+                  onClick={() => setSelectedImage(src)}
+                >
+                  {/* Fundo azul atrás da imagem */}
+                  <div className="absolute w-[92%] h-[92%] bg-[#39B2F7] z-0"></div>
 
-      {/* Imagem */}
-      <img
-        src={src}
-        alt={`Slide ${index + 1}`}
-        className="relative z-10 w-full object-cover shadow-xl h-auto   transition-all duration-500 cursor-pointer"
-
-      />
-
-      {/* Badge “Clique para ver” sempre visível com animação */}
-      {/* <motion.div
-        className="absolute bottom-2 right-1 bg-[#0A3274] text-white text-[10px] sm:text-[12px] px-[5px] py-[3px]  z-20 flex items-center gap-2  select-none"
-      >
-        <span>Clique para ver</span>
-      </motion.div> */}
-    </div>
-  </SwiperSlide>
-))}
-
+                  {/* Imagem */}
+                  <Image
+                    src={src}
+                    alt={`Slide ${index + 1}`}
+                    width={1200}
+                    height={800}
+                    className="relative z-10 w-full object-cover shadow-xl h-auto transition-all duration-500 cursor-pointer"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
 
           {/* Estilo de destaque no slide central */}
@@ -224,15 +228,20 @@ export default function portfolio() {
             className="fixed inset-0 bg-black/80 flex items-center justify-center z-100 cursor-pointer"
             onClick={() => setSelectedImage(null)}
           >
-            <motion.img
-              src={selectedImage}
-              alt="Imagem ampliada"
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              className="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl"
-            />
+              className="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl relative w-full h-full flex items-center justify-center"
+            >
+              <Image
+                src={selectedImage}
+                alt="Imagem ampliada"
+                fill
+                className="object-contain rounded-lg"
+              />
+            </motion.div>
           </div>
         )}
 

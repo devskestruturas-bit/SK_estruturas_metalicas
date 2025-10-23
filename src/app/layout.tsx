@@ -35,7 +35,7 @@ export default function RootLayout({
         <WhatsAppButton />
 
         {/* Conteúdo das páginas */}
-        <main className="min-h-screen">
+        <main>
           {children}
         </main>
 

@@ -68,7 +68,7 @@ export default function Hero() {
           duration: 0.4,
           delay:0.4,
         },
-        0 // começar no mesmo tempo (0) — ajuste aqui se quiser delay
+        0 
       );
     }
 
@@ -90,7 +90,6 @@ export default function Hero() {
       );
     }
 
-    // cleanup opcional (não estritamente necessário aqui, mas bom hábito)
     return () => {
       tl.kill();
     };
@@ -102,7 +101,6 @@ export default function Hero() {
         {/* IMAGEM DE FUNDO */}
         <div
           ref={bgRef}
-          // start scale inline para o GSAP animar para 1 (sem opacidade 0!)
           style={{ transform: 'scale(1)' }}
           className="absolute left-0 w-full h-full"
         >
@@ -118,14 +116,13 @@ export default function Hero() {
 
         {/* CONTEÚDO */}
         <div
-          className="absolute flex flex-col pt-[30%] sm:pt-[0%] justify-start sm:justify-center items-center sm:items-start
+          className="absolute pb-0 md:pb-40 lg:pb-0 xl:pb-40 flex flex-col pt-[30%] sm:pt-[0%] justify-start sm:justify-center items-center sm:items-start
           pl-[5%] md:pl-[4%] xl:pl-[12%] pr-[5%] sm:pr-0 w-full md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-2/3 h-full"
         >
           {/* Linha 1 */}
           <h1
             ref={line1Ref}
-            // IMPORTANT: não esconder o H1 por completo, as letras já estão invisíveis por estilo inline
-            className="text-xl sm:text-2xl md:text-4xl lg:text-3xl xl:text-3xl 2xl:text-5xl font-bold mb-1 txt-dark-blue text-center lg:text-left leading-tight flex flex-wrap"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-[34px] 2xl:text-5xl font-bold mb-1 txt-dark-blue text-center lg:text-left leading-tight flex flex-wrap"
           >
             {splitText(line1)}
           </h1>
@@ -133,7 +130,7 @@ export default function Hero() {
           {/* Linha 2 */}
           <h1
             ref={line2Ref}
-            className="text-xl sm:text-2xl md:text-4xl lg:text-3xl xl:text-3xl 2xl:text-5xl font-bold mb-4 txt-dark-blue text-center lg:text-left leading-tight flex flex-wrap"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-[34px] 2xl:text-5xl font-bold mb-4 txt-dark-blue text-center lg:text-left leading-tight flex flex-wrap"
           >
             {splitText(line2)}
           </h1>
@@ -142,7 +139,7 @@ export default function Hero() {
           <p
             ref={smallTextRef}
             // começa invisível via class tailwind
-            className="opacity-0 translate-y-5 text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl txt-dark-blue mb-4 text-center lg:text-left w-[70%] md:w-[60%] sm:w-[60%] lg:w-[60%] xl:w-[60%] 2xl:w-[45%]"
+            className="opacity-0 translate-y-5 text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl txt-dark-blue mb-4 text-center md:text-left w-[70%] md:w-[60%] sm:w-[60%] lg:w-[60%] xl:w-[60%] 2xl:w-[45%]"
             style={{ transform: 'translateY(20px)' }}
           >
             {smallText}
