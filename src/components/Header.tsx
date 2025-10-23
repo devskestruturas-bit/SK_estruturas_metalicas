@@ -116,7 +116,7 @@ export default function Header() {
             </div>
 
             {/* Navegação */}
-            <nav className={`flex items-end justify-end font-semibold py-3 pr-[12%] md:pr-[4%] xl:pr-[12%] transition-colors duration-500 ${
+            <nav className={`flex items-end justify-end font-semibold py-3 pr-[12%] md:pr-[4%] 2xl:pr-[12%] transition-colors duration-500 ${
               scrolled || notHome ? 'text-blue-900' : 'text-white'
             }`}>
               {menu.map((item, i) => {
@@ -132,7 +132,7 @@ export default function Header() {
                         router.push(item.path);
                       }
                     }} 
-                    className="px-6 xl:px-4 md:px-3 lg:px-3 cursor-pointer text-base 2xl:text-[18px] xl:text-[12px] lg:text-[13px] md:text-[11px]"
+                    className="px-6 xl:px-4 md:px-3 lg:px-3 cursor-pointer text-base 2xl:text-[18px] xl:text-[14px] lg:text-[16px] md:text-[11px]"
                   >
                     <span className="relative inline-block group">
                       {item.label}
