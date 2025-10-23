@@ -108,10 +108,9 @@ export default function Hero() {
             src="/bg_hero.jpg"
             alt="imagem SK"
             fill
-            sizes="100vw"
             priority
             className="object-cover"
-          />
+sizes="(max-width: 768px) 828px, 1920px"          />
         </div>
 
         {/* CONTEÚDO */}
