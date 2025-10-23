@@ -65,15 +65,18 @@ export default function Header() {
         >
           {/* LOGO */}
           <div className="flex w-3/5 md:w-1/4 lg:w-1/4 xl:w-2/5 items-center pl-[12%] md:pl-[4%] xl:pl-[12%]">
-            <Image
-              src="/logo.png"
-              alt="SK Estruturas Metálicas"
-              width={220}
-              height={60}
-              className="object-contain xl:w-[220px] lg:w-[220px] md:w-[220px]"
-              priority={false} // não forçar prioridade
-            />
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="SK Estruturas Metálicas"
+                width={220}
+                height={60}
+                className="object-contain xl:w-[220px] lg:w-[220px] md:w-[220px]"
+                priority={false} // não forçar prioridade
+              />
+            </Link>
           </div>
+
 
           {/* NAV DESKTOP */}
           <div className="hidden md:flex w-3/5 md:w-3/4 lg:w-3/4 xl:w-3/5 flex-col py-0 md:py-4 lg:pt-0">

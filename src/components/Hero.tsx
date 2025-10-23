@@ -150,7 +150,7 @@ export default function Hero() {
             href="https://wa.me/555131776005"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="w-full cursor-auto"
           >
           <button
             ref={buttonRef}

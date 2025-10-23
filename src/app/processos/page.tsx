@@ -75,7 +75,7 @@ export default function Processos() {
       </div>
 
       {/* ---------- CARDS ---------- */}
-      <div className="sm:max-w-7xl max-w-full mx-auto px-6 md:px-12 flex flex-col sm:flex-row gap-6">
+      <div className="sm:max-w-7xl max-w-full mx-auto px-6 md:px-12 flex flex-col sm:flex-row gap-6 justify-center">
         {cards.map((card, index) => {
           const isActive = activeCard === index;
 
