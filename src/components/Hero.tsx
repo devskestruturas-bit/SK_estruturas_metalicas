@@ -146,6 +146,12 @@ export default function Hero() {
           </p>
 
           {/* Botão */}
+          <a
+            href="https://wa.me/555131776005"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
           <button
             ref={buttonRef}
             className="opacity-0 transform scale-95 relative text-white rounded-full cursor-pointer overflow-hidden 
@@ -156,6 +162,7 @@ export default function Hero() {
           >
             SOLICITAR ORÇAMENTO
           </button>
+          </a>
         </div>
       </div>
 

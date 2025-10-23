@@ -103,7 +103,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
               <FaInstagram />
             </Link>
             <Link
-              href="https://www.linkedin.com"
+              href="https://br.linkedin.com/company/sk-estruturas-met%C3%A1licas"
               target="_blank"
               aria-label="LinkedIn"
               className="transition border border-blue-200 hover:bg-blue-900 hover:text-white p-2 rounded-lg"
