@@ -10,7 +10,7 @@ export default function Processos() {
     {
       img: '/processo_01.jpg',
       title: 'Recebimento e Estocagem',
-      description: 'Cortes e encaixes precisos, de acordo com o projeto executado.'
+      description: 'Controle total da matéria-prima, garantindo qualidade desde a base.'
     },
     {
       img: '/processo_02.jpg',
@@ -20,7 +20,7 @@ export default function Processos() {
     {
       img: '/processo_03.jpg',
       title: 'Solda e Pintura',
-      description: 'Cortes e encaixes precisos, de acordo com o projeto executado.'
+      description: 'Processos realizados com alto padrão técnico e pintura anticorrosiva para máxima durabilidade.'
     }
   ];
 
