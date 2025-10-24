@@ -3,6 +3,7 @@
 import ContactVisual from '@/components/ContactVisual';
 import { motion, Variants, Transition } from 'framer-motion';
 import Image from 'next/image';
+import {  useRef } from 'react';
 
 export default function Valores() {
   const cards = [
@@ -12,6 +13,7 @@ export default function Valores() {
     { img: '/icon_valores_04.png', text: 'Segurança e sustentabilidade' },
   ];
 
+  const bgRef = useRef<HTMLDivElement>(null);
   // Tipagem do transition
   const defaultTransition: Transition = { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] };
 
@@ -37,9 +39,25 @@ export default function Valores() {
 
   return (
     <section
-      className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] bg-cover bg-center"
-      style={{ backgroundImage: "url('/bg_valores.jpg')" }}
+      className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] "
     >
+
+      {/* IMAGEM DE FUNDO */}
+<div
+  ref={bgRef}
+  style={{ transform: 'scale(1)' }}
+  className="absolute right-0 w-full h-[600px] sm:h-full top-10"
+>
+  <Image
+    src="/bg_valores.jpg"
+    alt="imagem de fundo valores"
+    fill
+    priority
+    className="object-cover"
+    sizes="(max-width: 768px) 828px, 1920px"
+  />
+</div>
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-start text-left">
 
         {/* Título */}

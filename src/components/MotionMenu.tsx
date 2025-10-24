@@ -24,7 +24,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed top-[80px] left-0 w-full flex flex-col items-center pointer-events-auto z-40"
+        className="fixed top-[60px] left-0 w-full flex flex-col items-center pointer-events-auto z-40"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -77,7 +77,8 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
               comercial@skestruturas.com.br
             </a>
 
-            <a
+            <div className='flex w-full gap-2 justify-center items-center'>
+              <a
               href="tel:+555131776005"
               className="bg-[#39B2F7] px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
             >
@@ -90,6 +91,8 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             >
               (51) 3177-6004
             </a>
+            </div>
+            
           </div>
 
           {/* Redes */}

@@ -97,12 +97,12 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative w-full h-[750px] md:h-[850px] sm:h-[700px] flex justify-start items-start bg-gray-100">
+      <div className="relative w-full h-[600px] md:h-[850px] sm:h-[700px] flex justify-start items-start bg-gray-100">
         {/* IMAGEM DE FUNDO */}
         <div
           ref={bgRef}
           style={{ transform: 'scale(1)' }}
-          className="absolute left-0 w-full h-full"
+          className="absolute left-0 w-full h-[600px] sm:h-full"
         >
           <Image
             src="/bg_hero.jpg"
