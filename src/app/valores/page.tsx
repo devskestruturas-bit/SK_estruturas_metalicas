@@ -39,25 +39,8 @@ export default function Valores() {
 
   return (
     <section
-      className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] "
+      className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%]  bg-cover" style={{ backgroundImage: "url('/bg_valores.jpg')" }}
     >
-
-      {/* IMAGEM DE FUNDO */}
-<div
-  ref={bgRef}
-  style={{ transform: 'scale(1)' }}
-  className="absolute right-0 w-full h-[600px] sm:h-full top-10"
->
-  <Image
-    src="/bg_valores.jpg"
-    alt="imagem de fundo valores"
-    fill
-    priority
-    className="object-cover"
-    sizes="(max-width: 768px) 828px, 1920px"
-  />
-</div>
-
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-start text-left">
 
         {/* Título */}
