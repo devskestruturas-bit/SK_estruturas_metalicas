@@ -17,7 +17,7 @@ export default function WhatsAppButton() {
         initial={{ width: 80 }}
         animate={{ width: isHovered ? 230 : 60 }}
         transition={{ type: "spring", stiffness: 300, damping: 25 }}
-        onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+        onClick={() => window.open("https://wa.me/555131776005", "_blank")}
       >
         {/* Ícone do WhatsApp */}
         <Image
