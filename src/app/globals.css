@@ -76,3 +76,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #39B2F7;
 }
+
+@media (max-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 100px; /* ajusta conforme a altura do header */
+  }
+}
