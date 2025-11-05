@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Clientes() {
   return (
-    <section className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] bg-cover bg-center pb-0 md:pb-40 overflow-hidden">
+    <section className="relative w-full pt-0 sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] bg-cover bg-center pb-0 md:pb-40 overflow-hidden">
       <div className="sm:max-w-7xl max-w-full mx-auto px-0 md:px-12 flex flex-col items-start text-left pb-0 md:pb-28">
         {/* Texto 1 - ESTRUTURAÇÃO METÁLICA */}
         <motion.h2

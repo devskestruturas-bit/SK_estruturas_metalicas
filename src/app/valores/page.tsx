@@ -1,6 +1,6 @@
 'use client'
 
-import ContactVisual from '@/components/ContactVisual';
+import ContactVisual from '@/components/ContactVisual_02';
 import { motion, Variants, Transition } from 'framer-motion';
 import Image from 'next/image';
 import {  useRef } from 'react';

@@ -53,7 +53,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
                 key={i}
                 className="cursor-pointer hover:text-blue-300 transition"
                 onClick={() => {
-                  const id = item.path.replace('/', ''); // ex: '/quem-somos' => 'quem-somos'
+                  const id = item.path.replace('/', '');
                   const section = document.getElementById(id);
 
                   if (item.label === 'Trabalhe Conosco') {

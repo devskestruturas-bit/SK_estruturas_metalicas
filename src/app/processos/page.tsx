@@ -31,7 +31,7 @@ export default function Processos() {
   }
 
   return (
-    <section className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] pb-32 bg-cover bg-center">
+    <section className="relative w-full pt-[25%] sm:pt-[25%] lg:pt-[12%] 2xl:pt-[8%] pb-0 sm:pb-32 bg-cover bg-center">
       <div className="sm:max-w-7xl max-w-full mx-auto px-0 md:px-12 flex flex-col items-start text-left pb-0 ">
         {/* Texto 1 - ESTRUTURAÇÃO METÁLICA */}
         <motion.h2
@@ -53,7 +53,7 @@ export default function Processos() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-extrabold txt-dark-blue leading-tight mr-4">
-            NOSSOS PARCEIROS
+            NOSSOS PROCESSOS
           </h2>
           <motion.div
             className="h-[4px] bg-[#0A3274] rounded-full desk"

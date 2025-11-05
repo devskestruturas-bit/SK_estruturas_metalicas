@@ -4,40 +4,44 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MobileRedirect from "@/components/MobileRedirect";
 
-// Configuração do Roboto Flex
+// Configuração da fonte
 const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
   variable: "--font-roboto-flex",
-  weight: ["100","300","400","500","700","900"], // se quiser, pode ajustar os pesos
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {
   title: "SK Estruturas Metálicas",
   description: "Site institucional da SK Estruturas Metálicas",
-   icons: {
-    icon: '/icon_logo.png', // <- aqui!
+  icons: {
+    icon: "/icon_logo.png",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pt-BR">
       <body className={`${robotoFlex.variable} antialiased`}>
+        {/* Redirecionamento para mobile */}
+        <MobileRedirect />
+
         {/* Cabeçalho fixo */}
         <div className="absolute w-full top-0">
           <Header />
         </div>
+
+        {/* Botão WhatsApp flutuante */}
         <WhatsAppButton />
 
-        {/* Conteúdo das páginas */}
-        <main>
-          {children}
-        </main>
+        {/* Conteúdo principal */}
+        <main>{children}</main>
 
         {/* Rodapé */}
         <Footer />
