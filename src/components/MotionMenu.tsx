@@ -53,15 +53,21 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
                 key={i}
                 className="cursor-pointer hover:text-blue-300 transition"
                 onClick={() => {
-                      if (item.label === 'Trabalhe Conosco') {
-                        const footer = document.querySelector('footer');
-                        footer?.scrollIntoView({ behavior: 'smooth' });
-                        setMenuOpen(false);
-                      } else {
-                        setMenuOpen(false);
-                        router.push(item.path);
-                      }
-                    }} 
+                  const id = item.path.replace('/', ''); // ex: '/quem-somos' => 'quem-somos'
+                  const section = document.getElementById(id);
+
+                  if (item.label === 'Trabalhe Conosco') {
+                    const footer = document.querySelector('footer');
+                    footer?.scrollIntoView({ behavior: 'smooth' });
+                  } else if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    router.push(item.path);
+                  }
+
+                  setMenuOpen(false);
+                }}
+
               >
                 {item.label}
               </div>
