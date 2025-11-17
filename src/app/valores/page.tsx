@@ -96,6 +96,13 @@ export default function Valores() {
         </motion.div>
       </div>
 
+      {/* ---------- TEXTO ABAIXO DOS CARDS ---------- */}
+      <div className="sm:max-w-7xl max-w-full mx-auto px-6 md:px-12 mt-16  text-center  flex flex-col gap-2">
+        <p className="text-lg sm:text-4xl txt-dark-blue">
+          Desde 2003, a <strong>SK Estruturas Metálicas</strong> une tradição e inovação para construir com qualidade, segurança e precisão.
+        </p>
+      </div>
+
       {/* ContactVisual */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -109,6 +116,8 @@ export default function Valores() {
           mobImage="/visao_mob.png"
         />
       </motion.div>
+
+      
     </section>
   );
 }

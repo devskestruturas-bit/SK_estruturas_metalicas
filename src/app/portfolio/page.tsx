@@ -22,6 +22,11 @@ export default function Portfolio() {
     '/carousel_portfolio_03.jpg',
     '/carousel_portfolio_04.jpg',
     '/carousel_portfolio_05.jpg',
+    '/carousel_portfolio_06.jpg',
+    '/carousel_portfolio_07.jpg',
+    '/carousel_portfolio_08.jpg',
+    '/carousel_portfolio_09.jpg',
+    '/carousel_portfolio_10.jpg',
   ];
 
   const prevRef = useRef<HTMLButtonElement | null>(null);
