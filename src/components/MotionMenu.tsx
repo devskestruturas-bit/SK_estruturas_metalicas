@@ -24,7 +24,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed top-[60px] left-0 w-full h-full flex flex-col items-center pointer-events-auto z-40 "
+        className="fixed top-[40px] left-0 w-full h-full flex flex-col items-center pointer-events-auto z-40 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -40,14 +40,14 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
 
         {/* Conteúdo */}
         <motion.div
-          className="relative bg-[#0C1956] flex flex-col items-center py-20 space-y-10 text-white w-full px-5"
+          className="relative bg-[#0C1956] flex flex-col items-center py-20 space-y-4 text-white w-full px-5"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.35, delay: 0.15, ease: 'easeOut' }}
         >
           {/* Menu */}
-          <div className="flex flex-col items-start w-full space-y-6  text-md">
+          <div className="flex flex-col items-start w-full space-y-6  text-mg">
             {menu.map((item, i) => (
               <div
                 key={i}
