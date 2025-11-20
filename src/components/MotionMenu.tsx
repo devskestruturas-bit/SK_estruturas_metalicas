@@ -104,12 +104,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
               (51) 3177-6004
             </a>
 
-          </div>
-
-
-
-          {/* Redes
-          <div className="flex items-center gap-8 text-4xl ">
+            <div className="flex items-center gap-8 text-3xl ">
             <Link
               href="https://www.instagram.com/skestruturas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
@@ -122,11 +117,18 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
               href="https://br.linkedin.com/company/sk-estruturas-met%C3%A1licas"
               target="_blank"
               aria-label="LinkedIn"
-              className="transition border border-blue-200 hover:bg-blue-900 hover:text-white p-2 rounded-lg"
+              className="transition  border-blue-200 hover:bg-blue-900 hover:text-white p-2 rounded-lg"
             >
               <FaLinkedin />
             </Link>
-          </div> */}
+          </div>
+
+          </div>
+
+
+
+
+       
         </motion.div>
       </motion.div>
     </AnimatePresence>
