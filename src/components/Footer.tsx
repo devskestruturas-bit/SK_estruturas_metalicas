@@ -10,7 +10,7 @@ export default function Footer() {
       style={{ backgroundImage: "url('../bg_footer.jpg')" }}
     >
       {/* Overlay azul escuro */}
-      <div className="w-full bg-blue-900/80">
+      <div className="w-full bg-[#0C1956]/80">
         <div
           className="
             max-w-7xl mx-auto 
@@ -33,7 +33,7 @@ export default function Footer() {
             </p>
 
             {/* Caixa de informações */}
-            <div className="border border-white/60 rounded-xl p-6 flex flex-col space-y-4 max-w-md mx-auto md:mx-0 bg-white/5 backdrop-blur-sm">
+            <div className="border border-white/60 rounded-xl p-6 flex flex-col space-y-4 max-w-md mx-auto md:mx-0  backdrop-blur-sm">
               <div className="text-lg md:text-xl leading-relaxed">
                 <strong>Telefones:</strong>{" "}
                 <a href="tel:+555131776005" className="hover:underline px-1">
@@ -96,7 +96,7 @@ export default function Footer() {
         <div
           className="
             flex flex-col sm:flex-row justify-center sm:justify-between items-center 
-            bg-white text-blue-900 
+            bg-[#F9F3EA] text-blue-900 
             gap-4 sm:gap-6 px-6 sm:px-12 py-5
           "
         >

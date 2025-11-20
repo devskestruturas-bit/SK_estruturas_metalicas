@@ -51,7 +51,7 @@ export default function Portfolio() {
           </h2>
 
           <motion.div
-            className="h-[4px] bg-[#0A3274] rounded-full desk"
+            className="h-[4px] bg-[#0C1956] rounded-full desk"
             initial={{ width: 0 }}
             whileInView={{ width: '30%' }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -61,7 +61,7 @@ export default function Portfolio() {
 
         {/* Shape azul */}
         <motion.div
-          className="h-4 bg-[#39B2F7] mb-12 ml-6 sm:ml-0"
+          className="h-4 bg-[#9ECCFA] mb-12 ml-6 sm:ml-0"
           initial={{ width: 0 }}
           whileInView={{ width: '100px' }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
@@ -103,7 +103,7 @@ export default function Portfolio() {
               ref={prevRef}
               type="button"
               aria-label="Previous slide"
-              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#0A3274] rounded-lg flex items-center justify-center text-white focus:outline-none cursor-pointer"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#0C1956] rounded-lg flex items-center justify-center text-white focus:outline-none cursor-pointer"
             >
               <svg
                 width="32"
@@ -129,7 +129,7 @@ export default function Portfolio() {
               ref={nextRef}
               type="button"
               aria-label="Next slide"
-              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#0A3274] rounded-lg flex items-center justify-center text-white focus:outline-none cursor-pointer"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#0C1956] rounded-lg flex items-center justify-center text-white focus:outline-none cursor-pointer"
             >
               <svg
                 width="32"
@@ -198,7 +198,7 @@ export default function Portfolio() {
                   onClick={() => setSelectedImage(src)}
                 >
                   {/* Fundo azul atrás da imagem */}
-                  <div className="absolute w-[92%] h-[92%] bg-[#39B2F7] z-0"></div>
+                  <div className="absolute w-[92%] h-[92%] bg-[#9ECCFA] z-0"></div>
 
                   {/* Imagem */}
                   <Image

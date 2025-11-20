@@ -88,7 +88,7 @@ export default function Header() {
       <header className="fixed w-full z-50">
         <div
           className={`flex w-full items-center justify-between transition-colors ${
-            scrolled || menuOpen || notHome ? 'bg-white shadow-md' : 'bg-white/30'
+            scrolled || menuOpen || notHome ? 'bg-[#F9F3EA] shadow-md' : 'bg-white/30'
           }`}
         >
           {/* LOGO */}
@@ -106,9 +106,9 @@ export default function Header() {
           </div>
 
           {/* NAV DESKTOP */}
-          <div className="hidden md:flex w-3/5 md:w-3/4 lg:w-3/4 xl:w-3/5 flex-col py-0 md:py-4 lg:pt-0">
+          <div className="hidden md:flex w-3/5 md:w-3/4 lg:w-3/4 xl:w-3/5 flex-col pt-0 md:pt-4 lg:pt-0">
             {/* Top bar */}
-            <div className="hidden lg:flex relative justify-between items-center bg-[#0A3274] [clip-path:polygon(0%_0%,100%_0%,100%_100%,5%_100%)] text-white text-sm xl:text-[13px] lg:text-[12px] px-6 py-2 xl:py-1.5">
+            <div className="hidden lg:flex relative justify-between items-center bg-[#0C1956] [clip-path:polygon(0%_0%,100%_0%,100%_100%,5%_100%)] text-white text-sm xl:text-[13px] lg:text-[12px] px-6 py-2 xl:py-1.5">
               <div className="flex pl-12 xl:pl-8 lg:pl-4 items-center gap-4 lg:gap-3">
                 <a href="mailto:comercial@skestruturas.com.br" className="hover:underline">
                   comercial@skestruturas.com.br
@@ -135,7 +135,7 @@ export default function Header() {
                   href="https://br.linkedin.com/company/sk-estruturas-met%C3%A1licas"
                   target="_blank"
                   aria-label="LinkedIn"
-                  className="transition border border-blue-900 hover:bg-blue-900 hover:text-white p-2 rounded-lg"
+                  className="transition border border-[#0C1956] hover:bg-[#0C1956] hover:text-white p-2 rounded-lg"
                 >
                   <FaLinkedin />
                 </Link>
@@ -144,7 +144,7 @@ export default function Header() {
 
             {/* Navegação principal */}
             <nav className={`flex items-end justify-end font-semibold py-3 pr-[12%] md:pr-[4%] 2xl:pr-[12%] transition-colors duration-500 ${
-              scrolled || notHome ? 'text-blue-900' : 'text-white'
+              scrolled || notHome ? 'text-[#0C1956]' : 'text-white'
             }`}>
               {menu.map((item, i) => {
                 const active = pathname === item.path;
@@ -157,7 +157,7 @@ export default function Header() {
                     <span className="relative inline-block group">
                       {item.label}
                       <span
-                        className={`absolute left-0 -bottom-[3px] h-[2px] transition-all duration-300 bg-[#0A3274] ${
+                        className={`absolute left-0 -bottom-[3px] h-[2px] transition-all duration-300 bg-[#0C1956] ${
                           active ? 'w-full' : 'w-0 group-hover:w-full'
                         }`}
                       ></span>
@@ -173,10 +173,10 @@ export default function Header() {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className={`text-2xl transition-colors duration-300 ${
-                menuOpen ? 'text-blue-900' : scrolled || notHome ? 'text-blue-900' : 'text-white'
+                menuOpen ? 'text-[#0C1956]' : scrolled || notHome ? 'text-[#0C1956]' : 'text-white'
               }`}
             >
-              {menuOpen ? <FaTimes className="text-blue-900" /> : <FaBars />}
+              {menuOpen ? <FaTimes className="text-[#0C1956]" /> : <FaBars />}
             </button>
           </div>
         </div>

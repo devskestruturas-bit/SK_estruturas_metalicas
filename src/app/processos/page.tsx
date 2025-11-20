@@ -21,6 +21,11 @@ export default function Processos() {
       img: '/processo_03.jpg',
       title: 'Solda e Pintura',
       description: 'Processos realizados com alto padrão técnico e pintura anticorrosiva para máxima durabilidade.'
+    },
+    {
+      img: '/processo_04.jpg',
+      title: 'Transporte',
+      description: 'Carregamento seguro e logística organizada, garantindo que cada estrutura chegue ao destino sem danos e no prazo.'
     }
   ];
 
@@ -56,7 +61,7 @@ export default function Processos() {
             NOSSOS PROCESSOS
           </h2>
           <motion.div
-            className="h-[4px] bg-[#0A3274] rounded-full desk"
+            className="h-[4px] bg-[#0C1956] rounded-full desk"
             initial={{ width: 0 }}
             whileInView={{ width: '40%' }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -66,7 +71,7 @@ export default function Processos() {
 
         {/* Shape azul */}
         <motion.div
-          className="h-4 bg-[#39B2F7] mb-12 ml-6 sm:ml-0"
+          className="h-4 bg-[#9ECCFA] mb-12 ml-6 sm:ml-0"
           initial={{ width: 0 }}
           whileInView={{ width: '100px' }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
@@ -120,8 +125,8 @@ export default function Processos() {
       {/* ---------- TEXTO ABAIXO DOS CARDS ---------- */}
       <div className="sm:max-w-7xl max-w-full mx-auto px-6 md:px-12 mt-16 text-center  flex flex-col gap-2">
         <p className="text-lg sm:text-4xl txt-dark-blue">
-          <strong>Na SK, cada obra passa por um processo produtivo rigoroso,</strong>
-          garantindo <strong>desempenho</strong> e <strong>segurança</strong> em todas as etapas.
+          <strong>Na SK, cada obra passa por um processo produtivo rigoroso, </strong>
+           garantindo <strong>desempenho</strong> e <strong>segurança</strong> em todas as etapas.
         </p>
         <p className="text-base sm:text-2xl pt-[2%] txt-dark-blue">
           Todo o sistema é monitorado de perto pela equipe técnica, assegurando eficiência e conformidade com as normas da engenharia moderna.

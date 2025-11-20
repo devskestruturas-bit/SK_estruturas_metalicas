@@ -31,7 +31,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
       >
         {/* Shape azul */}
         <motion.div
-          className="absolute top-0 left-0 w-full h-full bg-[#0A3274] rounded-b-2xl"
+          className="absolute top-0 left-0 w-full h-full bg-[#0C1956] rounded-b-2xl"
           initial={{ y: '-100%' }}
           animate={{ y: 0 }}
           exit={{ y: '-100%' }}
@@ -47,11 +47,11 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
           transition={{ duration: 0.35, delay: 0.15, ease: 'easeOut' }}
         >
           {/* Menu */}
-          <div className="flex flex-col items-center space-y-6 font-semibold text-xl">
+          <div className="flex flex-col items-start w-full space-y-6  text-xl">
             {menu.map((item, i) => (
               <div
                 key={i}
-                className="cursor-pointer hover:text-blue-300 transition"
+                className="cursor-pointer hover:text-blue-300 transition border-b-1 pb-2 w-full"
                 onClick={() => {
                   const id = item.path.replace('/', '');
                   const section = document.getElementById(id);
@@ -78,7 +78,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
           <div className="flex flex-col items-center gap-4  text-center">
             <a
               href="mailto:comercial@skestruturas.com.br"
-              className="bg-white text-[#0A3274] px-6 py-2 rounded-full font-semibold text-lg shadow-md hover:bg-[#39B2F7] hover:text-white transition"
+              className="bg-white text-[#0C1956] px-6 py-2 rounded-full font-semibold text-lg shadow-md hover:bg-[#39B2F7] hover:text-white transition"
             >
               comercial@skestruturas.com.br
             </a>
@@ -86,14 +86,14 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             <div className='flex w-full gap-2 justify-center items-center'>
               <a
               href="tel:+555131776005"
-              className="bg-[#39B2F7] px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
+              className="bg-[#0C1956] border px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
             >
               (51) 3177-6005
             </a>
 
             <a
               href="tel:+555131776004"
-              className="bg-[#39B2F7] px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
+              className="bg-[#0C1956] border px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
             >
               (51) 3177-6004
             </a>

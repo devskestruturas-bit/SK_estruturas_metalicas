@@ -55,7 +55,7 @@ export default function Valores() {
 
         {/* Shape azul */}
         <motion.div
-          className="h-4 bg-[#39B2F7] mb-10"
+          className="h-4 bg-[#9ECCFA] mb-10"
           initial={{ width: 0 }}
           whileInView={{ width: '100px', transition: defaultTransition }}
           viewport={{ once: true, amount: 0.3 }}
@@ -72,7 +72,7 @@ export default function Valores() {
           {cards.map((card, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl p-8 flex flex-col items-center justify-center shadow-lg"
+              className="bg-[#F9F3EA] rounded-xl p-8 flex flex-col items-center justify-center shadow-lg"
               variants={cardVariants}
             >
               <motion.div variants={imgVariants} className="mb-4">

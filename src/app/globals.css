@@ -1,40 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F2F3F4;
+  --background: #F9F3EA;
   --foreground: #171717;
+  font-family: var(--font-aeonik), sans-serif;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #F2F3F4;
-    --foreground: #F2F3F4;
+    --background: #F9F3EA;
+    --foreground: #F9F3EA;
+    
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-roboto-flex), Arial, Helvetica, sans-serif;
+   font-family: var(--font-aeonik), sans-serif;
+
 }
 
 
 
 .bg-dark-blue{
-  background-color: #0A3274;
+  background-color: #0C1956;
 }
 
 .txt-dark-blue{
-  color: #0A3274;
+  color: #0C1956;
 }
 
 .bg-light-blue{
-  background-color: #39B2F7;
+  background-color: #9ECCFA;
 }
 
 .txt-light-blue{
-  color: #39B2F7;
+  color: #9ECCFA;
 }
 
 .desk {
@@ -70,11 +73,11 @@ body {
 
 ::-webkit-scrollbar {
   width: 12px; 
-  background-color: #0A3274; 
+  background-color: #0C1956; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #39B2F7;
+  background-color: #9ECCFA;
 }
 
 @media (max-width: 1024px) {

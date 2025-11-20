@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
-import { Roboto_Flex } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileRedirect from "@/components/MobileRedirect";
 
-// Configuração da fonte
-const robotoFlex = Roboto_Flex({
-  subsets: ["latin"],
-  variable: "--font-roboto-flex",
-  weight: ["100", "300", "400", "500", "700", "900"],
+// Fonte Aeonik Trial
+const aeonik = localFont({
+  src: [
+    {
+      path: "../../public/fonts/aeoniktrial-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/aeoniktrial-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-aeonik",
 });
 
 export const metadata: Metadata = {
@@ -21,29 +31,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={`${robotoFlex.variable} antialiased`}>
-        {/* Redirecionamento para mobile */}
+      <body className={`${aeonik.variable} antialiased`}>
         <MobileRedirect />
 
-        {/* Cabeçalho fixo */}
         <div className="absolute w-full top-0">
           <Header />
         </div>
 
-        {/* Botão WhatsApp flutuante */}
         <WhatsAppButton />
 
-        {/* Conteúdo principal */}
         <main>{children}</main>
 
-        {/* Rodapé */}
         <Footer />
       </body>
     </html>

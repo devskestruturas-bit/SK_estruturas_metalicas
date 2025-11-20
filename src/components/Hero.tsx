@@ -97,7 +97,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative w-full h-[600px] md:h-[850px] sm:h-[700px] flex justify-start items-start bg-gray-100">
+      <div className="relative w-full h-[600px] md:h-[850px] sm:h-[700px] flex justify-start items-start bg-[#F9F3EA]">
         {/* IMAGEM DE FUNDO */}
         <div
           ref={bgRef}
@@ -146,17 +146,17 @@ sizes="(max-width: 768px) 828px, 1920px"          />
 
           {/* Botão */}
           <a
-            href="https://wa.me/555131776005"
+            href="mailto:luciano@skestruturas.com.br,luiz@skestruturas.com.br?subject=Solicitação%20de%20Orçamento"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full cursor-auto"
           >
           <button
             ref={buttonRef}
-            className="opacity-0 transform scale-95 relative text-white rounded-full cursor-pointer overflow-hidden 
+            className="opacity-0 transform scale-95 relative text-white hover:text-[#0C1956] rounded-full cursor-pointer overflow-hidden 
               text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl
               py-3 px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 2xl:px-10
-              w-full sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[65%] 2xl:w-2/5 duration-500 bg-[#0A3274] hover:bg-[#39B2F7]"
+              w-full sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[65%] 2xl:w-2/5 duration-100 bg-[#0C1956] hover:bg-[#0C1956]/0 border-2 hover:border-[#0C1956]"
             style={{ transform: 'scale(0.95)' }}
           >
             SOLICITAR ORÇAMENTO

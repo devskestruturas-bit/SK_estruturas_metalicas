@@ -30,7 +30,7 @@ export default function Clientes() {
             ALGUNS PARCEIROS
           </h2>
           <motion.div
-            className="h-[4px] bg-[#0A3274] rounded-full desk"
+            className="h-[4px] bg-[#0C1956] rounded-full desk"
             initial={{ width: 0 }}
             whileInView={{ width: '40%' }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -40,7 +40,7 @@ export default function Clientes() {
 
         {/* Shape azul */}
         <motion.div
-          className="h-4 bg-[#39B2F7] mb-12 ml-6 sm:ml-0"
+          className="h-4 bg-[#9ECCFA] mb-12 ml-6 sm:ml-0"
           initial={{ width: 0 }}
           whileInView={{ width: '100px' }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
