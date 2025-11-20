@@ -24,7 +24,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed top-[60px] left-0 w-full flex flex-col items-center pointer-events-auto z-40 overflow-scroll"
+        className="fixed top-[60px] left-0 w-full h-full flex flex-col items-center pointer-events-auto z-40 overflow-scroll"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
