@@ -169,7 +169,7 @@ export default function Header() {
           </div>
 
           {/* MOBILE TOGGLE */}
-          <div className="md:hidden flex items-center relative pr-10 py-8">
+          <div className="md:hidden flex items-center relative pr-10 py-8 z-50">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className={`text-2xl transition-colors duration-300 ${

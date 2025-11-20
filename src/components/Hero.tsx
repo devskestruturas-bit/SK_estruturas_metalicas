@@ -97,7 +97,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative w-full h-[600px] md:h-[850px] sm:h-[700px] flex justify-start items-start bg-[#F9F3EA]">
+      <div className="relative w-full h-[600px] md:h-[850px] sm:h-[700px] flex justify-start items-start bg-[#F9F3EA] z-30">
         {/* IMAGEM DE FUNDO */}
         <div
           ref={bgRef}

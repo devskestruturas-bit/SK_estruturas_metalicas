@@ -24,23 +24,23 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed top-[60px] left-0 w-full h-full flex flex-col items-center pointer-events-auto z-40 overflow-visible"
+        className="fixed top-[60px] left-0 w-full h-full flex flex-col items-center pointer-events-auto z-40 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
         {/* Shape azul */}
-        <motion.div
+        {/* <motion.div
           className="absolute top-0 left-0 w-full h-full bg-[#0C1956] rounded-b-2xl"
           initial={{ y: '-100%' }}
           animate={{ y: 0 }}
           exit={{ y: '-100%' }}
           transition={{ duration: 0.45, ease: 'easeOut' }}
-        />
+        /> */}
 
         {/* Conteúdo */}
         <motion.div
-          className="relative flex flex-col items-center py-20 space-y-10 text-white w-full px-5"
+          className="relative bg-[#0C1956] flex flex-col items-center py-20 space-y-10 text-white w-full px-5"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             {/* Email */}
             <a
               href="mailto:comercial@skestruturas.com.br"
-              className="bg-[#0C1956] text-white border py-3 font-semibold text-md shadow-md w-full text-center "
+              className="bg-[#0C1956] text-white border py-3 font-semibold text-md  w-full text-center "
             >
               E-mail:
               comercial@skestruturas.com.br
@@ -88,7 +88,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             {/* Telefone */}
             <a
               href="tel:+555131776005"
-              className="bg-[#0C1956] text-white border py-3 font-semibold text-md shadow-md w-full text-center "
+              className="bg-[#0C1956] text-white border py-3 font-semibold text-md  w-full text-center "
             >
               Telefone:
               (51) 3177-6005
@@ -97,7 +97,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             {/* Telefone 2 / WhatsApp (opcional) */}
             <a
               href="tel:+555131776004"
-              className="bg-[#0C1956] text-white border py-3 font-semibold text-md shadow-md w-full text-center "
+              className="bg-[#0C1956] text-white border py-3 font-semibold text-md  w-full text-center "
             >
               Linha Alternativa:
               (51) 3177-6004

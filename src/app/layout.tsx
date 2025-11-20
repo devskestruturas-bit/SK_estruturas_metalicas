@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <body className={`${aeonik.variable} antialiased`}>
-        <MobileRedirect />
+        
 
         <div className="absolute w-full top-0">
           <Header />
@@ -46,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
 
         <Footer />
+        <MobileRedirect />
       </body>
     </html>
   );
