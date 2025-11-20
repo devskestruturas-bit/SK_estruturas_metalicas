@@ -156,7 +156,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
             className="opacity-0 transform scale-95 relative text-white hover:text-[#0C1956] rounded-full cursor-pointer overflow-hidden 
               text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl
               py-3 px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 2xl:px-10
-              w-full sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[65%] 2xl:w-2/5 duration-100 bg-[#0C1956] hover:bg-[#0C1956]/0 border-2 hover:border-[#0C1956]"
+              w-full sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[65%] 2xl:w-2/5 duration-100 bg-[#0C1956] hover:bg-[#0C1956]/0 border-2 border-[#0C1956]"
             style={{ transform: 'scale(0.95)' }}
           >
             SOLICITAR ORÇAMENTO

@@ -24,7 +24,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed top-[60px] left-0 w-full flex flex-col items-center pointer-events-auto z-40"
+        className="fixed top-[60px] left-0 w-full flex flex-col items-center pointer-events-auto z-40 overflow-scroll"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -40,14 +40,14 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
 
         {/* Conteúdo */}
         <motion.div
-          className="relative flex flex-col items-center py-20 space-y-10 text-white"
+          className="relative flex flex-col items-center py-20 space-y-10 text-white w-full px-5"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.35, delay: 0.15, ease: 'easeOut' }}
         >
           {/* Menu */}
-          <div className="flex flex-col items-start w-full space-y-6  text-xl">
+          <div className="flex flex-col items-start w-full space-y-6  text-lg">
             {menu.map((item, i) => (
               <div
                 key={i}
@@ -78,7 +78,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
           <div className="flex flex-col items-center gap-4  text-center">
             <a
               href="mailto:comercial@skestruturas.com.br"
-              className="bg-white text-[#0C1956] px-6 py-2 rounded-full font-semibold text-lg shadow-md hover:bg-[#39B2F7] hover:text-white transition"
+              className="bg-white text-[#0C1956] px-4 py-2 rounded-full font-semibold text-lg shadow-md hover:bg-[#39B2F7] hover:text-white transition"
             >
               comercial@skestruturas.com.br
             </a>
@@ -86,14 +86,14 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             <div className='flex w-full gap-2 justify-center items-center'>
               <a
               href="tel:+555131776005"
-              className="bg-[#0C1956] border px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
+              className="bg-[#0C1956] border px-4 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
             >
               (51) 3177-6005
             </a>
 
             <a
               href="tel:+555131776004"
-              className="bg-[#0C1956] border px-6 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
+              className="bg-[#0C1956] border px-4 py-2 rounded-full text-white text-lg font-semibold shadow-md hover:bg-[#2D9CDB] transition"
             >
               (51) 3177-6004
             </a>
