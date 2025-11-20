@@ -41,7 +41,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
         {/* Conteúdo */}
         <motion.div
             className="relative bg-[#0C1956] flex flex-col items-center py-20 space-y-4 text-white w-full px-5 
-            overflow-y-auto max-h-[100vh] rounded-b-2xl"
+            overflow-y-auto max-h-[100vh] rounded-b-2xl "
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
