@@ -108,7 +108,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
 
 
 
-          {/* Redes */}
+          {/* Redes
           <div className="flex items-center gap-8 text-4xl ">
             <Link
               href="https://www.instagram.com/skestruturas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -126,7 +126,7 @@ export default function MotionMenu({ menu, router, setMenuOpen }: Props) {
             >
               <FaLinkedin />
             </Link>
-          </div>
+          </div> */}
         </motion.div>
       </motion.div>
     </AnimatePresence>
