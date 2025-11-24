@@ -121,7 +121,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
           {/* Linha 1 */}
           <h1
             ref={line1Ref}
-            className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-[34px] 2xl:text-5xl font-bold mb-1 txt-dark-blue text-center lg:text-left leading-tight flex flex-wrap"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-[34px] 2xl:text-5xl font-bold mb-1 txt-white text-center lg:text-left leading-tight flex flex-wrap"
           >
             {splitText(line1)}
           </h1>
@@ -129,7 +129,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
           {/* Linha 2 */}
           <h1
             ref={line2Ref}
-            className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-[34px] 2xl:text-5xl font-bold mb-4 txt-dark-blue text-center lg:text-left leading-tight flex flex-wrap"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-[34px] 2xl:text-5xl font-bold mb-4 txt-white text-center lg:text-left leading-tight flex flex-wrap"
           >
             {splitText(line2)}
           </h1>
@@ -138,7 +138,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
           <p
             ref={smallTextRef}
             // começa invisível via class tailwind
-            className="opacity-0 translate-y-5 text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl txt-dark-blue mb-4 text-center md:text-left w-[70%] md:w-[60%] sm:w-[60%] lg:w-[60%] xl:w-[60%] 2xl:w-[45%]"
+            className="opacity-0 translate-y-5 text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl txt-white mb-4 text-center md:text-left w-[70%] md:w-[60%] sm:w-[60%] lg:w-[60%] xl:w-[60%] 2xl:w-[45%]"
             style={{ transform: 'translateY(20px)' }}
           >
             {smallText}
@@ -156,7 +156,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
             className="opacity-0 transform scale-95 relative text-white hover:text-[#0C1956] rounded-full cursor-pointer overflow-hidden 
               text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl
               py-3 px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 2xl:px-10
-              w-full sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[65%] 2xl:w-2/5 duration-100 bg-[#0C1956] hover:bg-[#0C1956]/0 border-2 border-[#0C1956]"
+              w-full sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[65%] 2xl:w-2/5 duration-100 bg-[#0C1956] hover:bg-white "
             style={{ transform: 'scale(0.95)' }}
           >
             SOLICITAR ORÇAMENTO
