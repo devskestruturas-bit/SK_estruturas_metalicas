@@ -1,26 +1,15 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileRedirect from "@/components/MobileRedirect";
 
-// Fonte Aeonik Trial
-const aeonik = localFont({
-  src: [
-    {
-      path: "../../public/fonts/aeoniktrial-regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/aeoniktrial-bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-aeonik",
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -31,12 +20,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR">
-      <body className={`${aeonik.variable} antialiased`}>
-        
-
+      <body className={`${manrope.variable} antialiased`}>
         <div className="absolute w-full top-0">
           <Header />
         </div>

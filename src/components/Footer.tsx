@@ -34,7 +34,7 @@ export default function Footer() {
 
             {/* Caixa de informações */}
             <div className="border border-white/60 rounded-xl p-6 flex flex-col space-y-4 max-w-md mx-auto md:mx-0  backdrop-blur-sm">
-              <div className="text-lg md:text-xl leading-relaxed">
+              <div className="text-lg md:text-md leading-relaxed">
                 <strong>Telefones:</strong>{" "}
                 <a href="tel:+555131776005" className="hover:underline px-1">
                   (51) 3177-6005
@@ -96,7 +96,7 @@ export default function Footer() {
         <div
           className="
             flex flex-col sm:flex-row justify-center sm:justify-between items-center 
-            bg-[#F9F3EA] text-blue-900 
+            bg-[#F2F7FF] text-blue-900 
             gap-4 sm:gap-6 px-6 sm:px-12 py-5
           "
         >

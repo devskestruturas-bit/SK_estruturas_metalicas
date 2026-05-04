@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function QuemSomos() {
   return (
-    <section className="relative w-full bg-[#F9F3EA] overflow-hidden py-0 sm:py-24  px-[12%] md:px-[4%] xl:px-[12%]">
+    <section className="relative w-full bg-[#F2F7FF] overflow-hidden py-0 sm:py-24  px-[12%] md:px-[4%] xl:px-[12%]">
       {/* Imagem vertical esquerda */}
       <div className="absolute top-0 left-0 h-full z-0 hidden lg:block">
         <Image
@@ -101,7 +101,7 @@ export default function QuemSomos() {
   </motion.h2>
 
   <motion.div
-    className="w-full max-w-full lg:max-w-3/4 bg-[#F9F3EA] rounded-b-2xl lg:rounded-b-2xl shadow-xl 
+    className="w-full max-w-full lg:max-w-3/4 bg-[#F2F7FF] rounded-b-2xl lg:rounded-b-2xl shadow-xl 
                p-6 sm:p-10 flex flex-col lg:flex-row gap-10 items-center z-50"
     initial={{ opacity: 1, scale: 1 }}
     whileInView={{ opacity: 1, scale: 1 }}

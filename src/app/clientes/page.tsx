@@ -49,7 +49,7 @@ export default function Clientes() {
       </div>
 
       {/* ---------- SEÇÃO IMAGEM FUNDO + CONTEÚDO ---------- */}
-      <div className="relative w-full h-[400px] md:h-[400px] bg-[#F2F7FB]  overflow-visible flex items-center justify-between shadow-lg ">
+      <div className="relative w-full h-[400px] md:h-[400px] bg-[#F2F7FF]  overflow-visible flex items-center justify-between shadow-lg ">
 
         {/* ======== SHAPES DE FUNDO (DIREITA -> ESQUERDA) ======== */}
         <motion.div

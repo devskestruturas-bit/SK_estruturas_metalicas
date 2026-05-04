@@ -72,7 +72,7 @@ export default function Valores() {
           {cards.map((card, index) => (
             <motion.div
               key={index}
-              className="bg-[#F9F3EA] rounded-xl p-8 flex flex-col items-center justify-center shadow-lg"
+              className="bg-[#FFFFFF] rounded-xl p-8 flex flex-col items-center justify-center shadow-2xl"
               variants={cardVariants}
             >
               <motion.div variants={imgVariants} className="mb-4">

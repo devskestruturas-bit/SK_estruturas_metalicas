@@ -88,7 +88,7 @@ export default function Header() {
       <header className="fixed w-full z-50">
         <div
           className={`flex w-full items-center justify-between transition-colors ${
-            scrolled || menuOpen || notHome ? 'bg-[#F9F3EA] shadow-md' : 'bg-white/30'
+            scrolled || menuOpen || notHome ? 'bg-[#F2F7FF] shadow-md' : 'bg-[#F2F7FF]/70'
           }`}
         >
           {/* LOGO */}
@@ -144,7 +144,7 @@ export default function Header() {
 
             {/* Navegação principal */}
             <nav className={`flex items-end justify-end font-semibold py-3 pr-[12%] md:pr-[4%] 2xl:pr-[12%] transition-colors duration-500 ${
-              scrolled || notHome ? 'text-[#0C1956]' : 'text-white'
+              scrolled || notHome ? 'text-[#0C1956]' : 'text-[#0C1956]'
             }`}>
               {menu.map((item, i) => {
                 const active = pathname === item.path;
