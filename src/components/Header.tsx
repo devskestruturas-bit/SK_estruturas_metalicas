@@ -88,7 +88,7 @@ export default function Header() {
       <header className="fixed w-full z-50">
         <div
           className={`flex w-full items-center justify-between transition-colors ${
-            scrolled || menuOpen || notHome ? 'bg-[#F2F7FF] shadow-md' : 'bg-[#F2F7FF]/70'
+            scrolled || menuOpen || notHome ? 'bg-[#F2F7FF] shadow-md' : 'bg-[#F2F7FF]/90'
           }`}
         >
           {/* LOGO */}
@@ -173,7 +173,7 @@ export default function Header() {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className={`text-2xl transition-colors duration-300 ${
-                menuOpen ? 'text-[#0C1956]' : scrolled || notHome ? 'text-[#0C1956]' : 'text-white'
+                menuOpen ? 'text-[#0C1956]' : scrolled || notHome ? 'text-[#0C1956]' : 'text-[#0C1956]'
               }`}
             >
               {menuOpen ? <FaTimes className="text-[#0C1956]" /> : <FaBars />}

@@ -34,7 +34,7 @@ export default function Footer() {
 
             {/* Caixa de informações */}
             <div className="border border-white/60 rounded-xl p-6 flex flex-col space-y-4 max-w-md mx-auto md:mx-0  backdrop-blur-sm">
-              <div className="text-lg md:text-md leading-relaxed">
+              <div className="text-[13px] md:text-md leading-relaxed">
                 <strong>Telefones:</strong>{" "}
                 <a href="tel:+555131776005" className="hover:underline px-1">
                   (51) 3177-6005
@@ -55,7 +55,7 @@ export default function Footer() {
                 </a>
               </div>
 
-              <div className="text-lg md:text-xl">
+              <div className="text-md md:text-xl">
                 <strong>Endereço:</strong> Rua Benno Johan Heinle, 207 – Industrial,
                 Lindolfo Collor – RS
               </div>

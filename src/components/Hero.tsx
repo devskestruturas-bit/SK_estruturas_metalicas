@@ -115,7 +115,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
 
         {/* CONTEÚDO */}
         <div
-          className="absolute pb-0 md:pb-40 lg:pb-0 xl:pb-40 flex flex-col pt-[30%] sm:pt-[0%] justify-start sm:justify-center items-center sm:items-start
+          className="absolute pb-0 md:pb-40 lg:pb-0 xl:pb-40 flex flex-col pt-[80%] sm:pt-[0%] justify-start sm:justify-center items-center sm:items-start
           pl-[5%] md:pl-[4%] xl:pl-[12%] pr-[5%] sm:pr-0 w-full md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-2/3 h-full"
         >
           {/* Linha 1 */}
@@ -137,8 +137,7 @@ sizes="(max-width: 768px) 828px, 1920px"          />
           {/* Texto pequeno */}
           <p
             ref={smallTextRef}
-            // começa invisível via class tailwind
-            className="opacity-0 translate-y-5 text-sm sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl txt-force-color mb-4 text-center md:text-left w-[70%] md:w-[60%] sm:w-[60%] lg:w-[60%] xl:w-[60%] 2xl:w-[45%]"
+            className="opacity-0 translate-y-5 text-md sm:text-base md:text-lg lg:text-lg xl:text-md 2xl:text-xl txt-force-color mb-4 text-center md:text-left w-[70%] md:w-[60%] sm:w-[60%] lg:w-[60%] xl:w-[60%] 2xl:w-[45%]"
             style={{ transform: 'translateY(20px)' }}
           >
             {smallText}
